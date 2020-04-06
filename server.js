@@ -25,9 +25,14 @@ const upload = multer({storage: storage});
 server.prepare().then(() => {
 
 //ROUTES WILL GO HERE
+
     app.get('/make-order', function (req, res) {
+        return server.render(req, res, '/make-order', req.query)
+    });
+    app.get('/', function (req, res) {
         return server.render(req, res, '/', req.query)
     });
+
 
     app.post('/upload',
         upload.single('myFile'),
