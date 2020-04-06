@@ -31,8 +31,8 @@ const Layout: NextPage = ({children}) => {
             </Head>
             <Header/>
             <main className="main">
+                {children}
             </main>
-            {children}
             <Footer/>
             <style jsx={true}>
                 {`

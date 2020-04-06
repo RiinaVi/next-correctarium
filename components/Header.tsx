@@ -3,12 +3,8 @@ import React from "react";
 import {NextPage} from "next";
 // @ts-ignore
 import Logo from '../public/cr_logo_w.svg'
-import headerStyle from "./style/headerStyle";
-
 
 const Header: NextPage = () => (
-    <>
-        <style>{`${headerStyle}`}</style>
         <header className="header">
             <div className="container">
                 <div className="container__item">
@@ -41,7 +37,6 @@ const Header: NextPage = () => (
                 </div>
             </div>
         </header>
-    </>
 );
 
 export default Header;

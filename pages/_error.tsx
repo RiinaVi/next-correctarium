@@ -2,7 +2,6 @@ import React from 'react'
 import Link from "next/link";
 import {NextPage} from "next";
 import Layout from "../components/Layout";
-import errorStyle from "./style/errorStyle";
 
 const ErrorPage: NextPage = () => (
     <Layout>
@@ -21,7 +20,6 @@ const ErrorPage: NextPage = () => (
                 </div>
             </div>
         </div>
-        <style>{`${errorStyle}`}</style>
     </Layout>
 );
 

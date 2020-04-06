@@ -1,7 +1,6 @@
 import React from "react";
 import {NextPage} from "next";
 import {useRouter} from 'next/router'
-import footerStyle from "./style/footerStyle";
 
 const Footer: NextPage = () => {
     const {pathname} = useRouter();
@@ -22,7 +21,6 @@ const Footer: NextPage = () => {
                     <button className="lang__item">Русский</button>
                 </div>
             </footer>
-            <style>{`${footerStyle}`}</style>
         </>
     )
 };
