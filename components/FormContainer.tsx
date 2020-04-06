@@ -29,7 +29,7 @@ const FormContainer: NextComponentType = () => {
 
     const onChangeHandler = (setter, value):any => {
         setter(value);
-    }
+    };
 
     useEffect(()=>{
         setPrice(calculatePrice(textLength, language));
@@ -38,8 +38,6 @@ const FormContainer: NextComponentType = () => {
 
     return(
         <FormComponent
-
-           // @ts-ignore
             onChangeHandler={onChangeHandler}
             setTextLength={setTextLength}
             textLength={textLength}
